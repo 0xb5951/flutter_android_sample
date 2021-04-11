@@ -3,7 +3,8 @@ version: "3"
 services:
   flutter:
     build: .
-    image: "flutter-android" 
+    image: "flutter-android-image" 
+    container_name: "flutter-android" 
     tty: true
     volumes:
       - "./app:/home/mike/app" # あとでlongに修正する
