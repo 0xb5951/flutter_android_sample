@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  flutter:
+    build: .
+    image: "flutter-android" 
+    tty: true
+    volumes:
+      - "./app:/home/mike/app" # あとでlongに修正する
