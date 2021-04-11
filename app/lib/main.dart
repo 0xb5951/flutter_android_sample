@@ -1,22 +1,22 @@
-// マテリアルデザインがまとめられてたパッケージをインポート
+// Copyright 2018 The Flutter team. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(SampleApp()); // 引数必須
-}
+void main() => runApp(MyApp());
 
-class SampleApp extends StatelessWidget {
-  const name({Key key}) : super(key: key);
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scafold (
-        appbar: Appbar(
-          title: text('Appbar'),
+      title: 'Welcome to Flutter',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Welcome to Flutter'),
         ),
         body: Center(
-          child: Text('Body'),
+          child: Text('Hello World'),
         ),
       ),
     );
