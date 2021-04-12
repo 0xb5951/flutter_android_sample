@@ -29,5 +29,6 @@ ENV PATH "$PATH:/home/mike/Android/sdk/platform-tools"
 RUN git clone https://github.com/flutter/flutter.git -b stable
 ENV PATH $PATH:/home/mike/flutter/bin/
 RUN flutter precache
+RUN flutter config --enable-web
 
 CMD ["bash"]
