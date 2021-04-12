@@ -5,5 +5,9 @@
 	],
 	"service": "flutter",
 	"workspaceFolder": "/home/mike/app",
-	"extensions": []
+	"extensions": [
+		"oderwat.indent-rainbow",
+		"dart-code.flutter",
+		"dart-code.dart-code",
+	]
 }
