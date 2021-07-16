@@ -5,6 +5,16 @@ services:
     build: .
     image: "flutter-android-image" 
     container_name: "flutter-android" 
-    tty: true
+    command: sleep infinity
+    # tty: true
+    environment:
+      - no_proxy=127.0.0.1,localhost
+      - DISPLAY=:1
     volumes:
-      - "./app:/home/mike/app" # あとでlongに修正する
+      - "./app:/workdir/app" # あとでlongに修正する
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    devices:
+      - /dev/dri:/dev/dri
+    network_mode: "host"
+    extra_hosts:
+      - flutter:127.0.1.1
