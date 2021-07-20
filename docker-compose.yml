@@ -5,8 +5,7 @@ services:
     build: .
     image: "flutter-android-image" 
     container_name: "flutter-android" 
-    command: sleep infinity
-    # tty: true
+    tty: true
     environment:
       - no_proxy=127.0.0.1,localhost
       - DISPLAY=:1
@@ -15,6 +14,7 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix
     devices:
       - /dev/dri:/dev/dri
+      - /dev/kvm:/dev/kvm
     network_mode: "host"
     extra_hosts:
       - flutter:127.0.1.1
