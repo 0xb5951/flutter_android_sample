@@ -1,13 +1,14 @@
 {
-	"name": "flutter-sample-app",
+	"name": "flutter-android",
 	"dockerComposeFile": [
 		"../docker-compose.yml"
 	],
 	"service": "flutter",
-	"workspaceFolder": "/home/mike/app",
+	"workspaceFolder": "/workdir",
 	"extensions": [
 		"oderwat.indent-rainbow",
 		"dart-code.flutter",
 		"dart-code.dart-code",
+		"vscode-icons-team.vscode-icons"
 	]
 }
