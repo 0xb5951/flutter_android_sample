@@ -12,7 +12,7 @@ COPY ./shell/run_second_startup.sh ./run_second_startup.sh
 RUN usermod -s /bin/bash circleci
 RUN sudo groupadd -r kvm && sudo adduser circleci kvm \
     && sudo chmod 777 . \
-    && sudo chmod 777 ./run_second_startup.sh 
+    && sudo chmod 777 ./run_second_startup.sh
 
 # setup emulator
 RUN sdkmanager "cmdline-tools;latest" && \
